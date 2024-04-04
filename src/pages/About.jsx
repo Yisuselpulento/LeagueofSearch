@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='flex gap-10 md:p-40 items-center flex-col md:flex-row'>
       <img src={AsaImage} className='w-[500px]' alt='imagen sobre nosotros 1' />
-      <div className='flex items-center flex-col'>
+      <div className='flex items-center flex-col gap-7'>
 
         <p className='text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, esse! Repudiandae quibusdam quisquam provident! Odio, debitis, praesentium laudantium modi maiores perspiciatis aliquid, laboriosam harum ipsa odit sapiente laborum asperiores magni?
           Aliquam eligendi repudiandae, numquam reiciendis exercitationem consectetur molestias, magnam obcaecati iste tempore adipisci? Incidunt voluptates porro quisquam voluptatum maiores vitae! Quod ab necessitatibus sapiente, molestiae aperiam maxime praesentium porro minus?

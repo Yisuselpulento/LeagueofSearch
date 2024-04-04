@@ -40,13 +40,13 @@ export const Layout = () => {
         </NavLink>
 
         <nav>
-          <ul className='flex md:flex-row md:gap-3 flex-col gap-7 md:items-center'>
+          <ul className='flex md:flex-row md:gap-3 flex-col gap-5  md:items-center '>
             {navLinks.map((link, index) => (
-              <li key={index} className='flex justify-center items-center h-[50px] '>
+              <li key={index} className='flex justify-center items-center h-[30px] '>
                 <NavLink
                   to={link.to}
                   className={({ isActive }) =>
-                    isActive ? 'font-bold bg-indigo-700  text-white text-sm w-full h-full flex items-center md:justify-center md:w-[100px] md:h-[60px] p-5' : 'font-bold text-sm dark:text-[#7777c2] text-gray-500 p-5  dark:hover:bg-indigo-900 hover:bg-gray-200  w-full flex items-center md:justify-center md:w-[100px] h-[60px] md:h-[60px]'}
+                    isActive ? 'font-bold bg-indigo-700  text-white text-sm w-full h-full flex items-center md:justify-center md:w-[100px] md:h-[60px] p-5' : 'font-bold text-sm dark:text-[#7777c2] text-gray-500 p-5  dark:hover:bg-indigo-900 hover:bg-gray-200  w-full flex items-center md:justify-center md:w-[100px] md:h-[60px]'}
                 >
                   {link.text}
                 </NavLink>
