@@ -27,7 +27,7 @@ const ChampionDetails = () => {
             className=' hover:text-indigo-500 w-[20px] pl-3'
             to='/champions'
           >Atras</Link>
-          <div className='flex flex-col gap-5 relative'>
+          <div className='flex flex-col gap-5 relative shadow-lg'>
             {/* Fondo semitransparente */}
             <div className='absolute inset-0 bg-black opacity-90 rounded-lg' />
 
@@ -56,7 +56,7 @@ const ChampionDetails = () => {
             </div>
           </div>
 
-          <div className='flex gap-5 overflow-auto w-screen md:w-[1000px] scrollbar scrollbar-thumb-indigo-700 p-4'>
+          <div className='flex gap-5 overflow-auto w-screen md:w-[1000px] scrollbar scrollbar-thumb-indigo-700 p-4 shadow-lg'>
             {champ.skins?.map((skin, i) => (
               (
                 <img

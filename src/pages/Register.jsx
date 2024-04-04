@@ -55,7 +55,7 @@ const Register = () => {
     }
   }
   return (
-    <div className='dark:bg-[#1b1b3a] bg-gray-100 w-full rounded p-10 md:p-14 md:w-[500px] flex flex-col gap-4 dark:text-indigo-100'>
+    <div className='dark:bg-[#1b1b3a] m-5 bg-gray-200 w-full rounded p-10 md:p-14 md:w-[500px] flex flex-col gap-4 dark:text-indigo-100 '>
       <div>
         <p>Bienvenido a League Search</p>
         <p className='text-3xl font-bold'>Create una cuenta</p>
