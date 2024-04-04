@@ -34,7 +34,7 @@ export const Layout = () => {
         <NavbarIco color='white' />
       </button>
 
-      <header className={activeMenu ? 'hidden' : 'fixed flex md:justify-between z-20 p-4 dark:bg-primary bg-gray-100 shadow-lg text-lg md:items-center  rounded flex-col md:flex-row gap-4 w-[250px] md:w-full top-16 left-2 md:static  '}>
+      <header className={`fixed flex md:justify-between z-20 p-4 dark:bg-primary bg-gray-100 shadow-lg text-lg md:items-center  rounded flex-col md:flex-row gap-4 w-[250px] md:w-full top-16 left-2 md:static ${activeMenu && 'hidden md:flex'}  `}>
         <NavLink to='/'>
           <img className='md:w-[50px] w-10 shadow-lg rounded-full' src={logo} alt='logo principal de la pagina' />
         </NavLink>
@@ -46,7 +46,7 @@ export const Layout = () => {
                 <NavLink
                   to={link.to}
                   className={({ isActive }) =>
-                    isActive ? 'font-bold bg-indigo-700 p-3  text-white text-sm w-full h-full flex items-center md:justify-center md:w-[90px] md:h-[60px]' : 'font-bold text-sm dark:text-[#7777c2] text-gray-500 p-2  dark:hover:bg-indigo-900 hover:bg-gray-200  w-full flex items-center md:justify-center md:w-[90px] h-[60px] md:h-[60px]'}
+                    isActive ? 'font-bold bg-indigo-700  text-white text-sm w-full h-full flex items-center md:justify-center md:w-[100px] md:h-[60px] p-5' : 'font-bold text-sm dark:text-[#7777c2] text-gray-500 p-5  dark:hover:bg-indigo-900 hover:bg-gray-200  w-full flex items-center md:justify-center md:w-[100px] h-[60px] md:h-[60px]'}
                 >
                   {link.text}
                 </NavLink>

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { fetchChampionDetails } from '../services/getChampions'
+import Spinner from '../components/Spinner'
 
 const ChampionDetails = () => {
   const [champ, setChamp] = useState({})
@@ -58,17 +59,17 @@ const ChampionDetails = () => {
 
           <div className='flex gap-5 overflow-auto w-screen md:w-[1000px] scrollbar scrollbar-thumb-indigo-700 p-4 shadow-lg'>
             {champ.skins?.map((skin, i) => (
-              (
-                <img
-                  className='w-[150px] border border-yellow-300 rounded'
-                  key={i}
-                  src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champ.id}_${skin.num}.jpg`}
-                />
-              )
+
+              <img
+                className='w-[150px] border border-yellow-300 rounded'
+                key={i}
+                src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champ.id}_${skin.num}.jpg`}
+              />
+
             ))}
           </div>
         </div>
-        : <p>Cargando... </p>}
+        : <Spinner />}
     </div>
 
   )

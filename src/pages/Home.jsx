@@ -18,9 +18,10 @@ const Home = () => {
 
         </div>
 
-        <div className=' w-full flex items-center justify-center h-[400px] opacity-80 '>
+        <div className=' w-full flex items-center justify-center opacity-80 '>
           <video autoPlay controls={false} loop muted disablePictureInPicture disableRemotePlayback width='500'>
             <source src='/videos/video2.mp4' type='video/mp4' />
+
           </video>
         </div>
       </div>
