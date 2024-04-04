@@ -31,7 +31,7 @@ export const Layout = () => {
         onClick={handleMenuActive}
         className='md:hidden p-3 rounded-full m-2 dark:bg-primary bg-indigo-700 fixed z-30'
       >
-        <NavbarIco color={theme === 'light' ? 'black' : 'white'} />
+        <NavbarIco color='white' />
       </button>
 
       <header className={activeMenu ? 'hidden' : 'fixed flex md:justify-between z-20 p-4 dark:bg-primary bg-gray-100 shadow-lg text-lg md:items-center  rounded flex-col md:flex-row gap-4 w-[250px] md:w-full top-16 left-2 md:static  '}>
