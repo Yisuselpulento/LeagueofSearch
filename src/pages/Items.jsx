@@ -22,7 +22,7 @@ export const Items = () => {
           placeholder='Search items...'
         />
       </div>
-      <div className='flex gap-5 flex-wrap p-5 m-5 dark:bg-[#1b1b3a] bg-gray-100 h-[1000px] md:w-[1500px] overflow-auto scrollbar scrollbar-thumb-indigo-700 w-full border-[1px] dark:border-gray-700 border-gray-200'>
+      <div className='flex gap-5 flex-wrap p-5 mb-5 dark:bg-[#1b1b3a] bg-gray-100 h-[1000px] md:w-[1500px] overflow-auto scrollbar scrollbar-thumb-indigo-700 w-full border-[1px] dark:border-gray-700 border-gray-200'>
         {filteredItems?.map((item, i) => (
           <CardItems item={item} key={i} />
         ))}

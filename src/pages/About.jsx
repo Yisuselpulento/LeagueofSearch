@@ -14,7 +14,7 @@ const About = () => {
           Nam mollitia possimus blanditiis eligendi labore? Incidunt ipsum error facere iusto quam quaerat voluptatibus enim sit dolorem, recusandae placeat temporibus esse doloribus cum quos ullam nam perspiciatis laudantium. Ducimus, corporis.
 
         </p>
-        <img src={picture} alt='imagen de nosotros 2' className='w-[200px]' />
+        <img src={picture} alt='imagen de nosotros 2' className='w-[200px] m-5' />
       </div>
 
     </div>

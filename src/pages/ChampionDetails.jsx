@@ -25,7 +25,7 @@ const ChampionDetails = () => {
       {champ
         ? <div className='flex flex-col gap-5 w-screen md:w-full text-white '>
           <Link
-            className=' hover:text-indigo-500 w-[20px] pl-3'
+            className=' hover:text-indigo-500 w-[20px] pl-3 dark:text-white text-gray-800 text-lg ml-2'
             to='/champions'
           >Atras</Link>
           <div className='flex flex-col gap-5 relative shadow-lg'>

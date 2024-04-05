@@ -23,7 +23,7 @@ export const Champions = () => {
         />
       </div>
 
-      <div className='flex gap-5 flex-wrap  p-5 m-5  dark:bg-[#1b1b3a] bg-gray-100 h-[1000px] w-full md:w-[1500px] overflow-auto scrollbar scrollbar-thumb-indigo-700 rounded border-[1px] dark:border-gray-700 border-gray-200 shadow '>
+      <div className='flex gap-5 flex-wrap  p-5 mb-4  dark:bg-[#1b1b3a] bg-gray-100 h-[1000px] w-full md:w-[1500px] overflow-auto scrollbar scrollbar-thumb-indigo-700 rounded border-[1px] dark:border-gray-700 border-gray-200 shadow '>
         {filteredChampions?.map((champ, i) => (
           <CardChamp champion={champ} key={i} />
         ))}
